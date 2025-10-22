@@ -1,5 +1,7 @@
 package com.pluralsight;
 
+import java.util.ArrayList;
+
 public class NameFormatter {
 
     private NameFormatter() {
@@ -7,30 +9,18 @@ public class NameFormatter {
 
     public static String format (String firstName,
                                  String lastName) {
+        StringBuilder sb = new StringBuilder();
 
-        String formattedName = "";
+        firstName = firstName.trim();
+        lastName = lastName.trim();
 
-        return formattedName;
+        sb.append(lastName);
+        sb.append(", ");
+        sb.append(firstName);
+
+        return sb.toString();
     }
 
-    public static String format (String prefix,
-                                 String firstName,
-                                 String middleName,
-                                 String lastName,
-                                 String suffix) {
 
-        String formattedName = "";
-
-        return formattedName;
-
-    }
-
-    public static String format (String fullName) {
-
-        String formattedName = "";
-
-        return formattedName;
-
-    }
 
 }
